@@ -1,10 +1,10 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: Muli, sans-serif;
+	font-family: Muli;
 }
 
-header {
+body {
 	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(background.jpg);
 	background-color: #383c55;
 	height: 100vh;
@@ -12,37 +12,42 @@ header {
 	background-position: center;
 }
 
-div.main {
-	max-width: 1200px;
+div.navbar {
 	margin: auto;
+	width: 100%;
+	padding: 0.8rem;
+	position: fixed;
+	background-color: #212121;
 }
 
-ul.navbar {
+ul.nav {
 	float: left;
 	list-style-type: none;
-	margin-top: 25px;
 }
 
-ul.navbar li {
+ul.nav li {
 	display: inline-block;
 }
 
-ul.navbar li a {
+ul.nav li a {
 	text-decoration: none;
 	color: #E9F1FE;
 	padding: 5px 20px;
 	border: 1px solid transparent;
 }
 
-ul.navbar li a:hover {
-	background-color: #E9F1FE;
-	color: #12172B;
+ul.nav li.active a {
+	border-bottom: 3px solid #fff;
+}
+
+ul.nav li a:hover {
+	background-color: rgba(233,241,254, 0.45);
 	transition: 0.5s;
 }
 
-ul.navbar li.active a {
-	background-color: #E9F1FE;
-	color: #12172B;
+ul.nav li a:active {
+	border-bottom: 3px solid #fff;
+	transition: 0.5s;
 }
 
 h1.logo {
@@ -62,19 +67,15 @@ div.title {
 }
 
 div.title h1 {
-	color: #E9F1FE;
+	color: #f5f9ff;
 	font-size: 70px;
 }
 
 div.title p {
-	color: #bdc1cf;
+	color: #d1d7e2;
 	text-align: center;
 	font-size: larger;
 	margin: 5px;
-}
-
-ul.contact {
-	list-style-type:circle;
 }
 
 ul.contact p {
@@ -85,5 +86,5 @@ ul.contact p {
 
 ul.contact p a {
 	text-decoration: none;
-	color: #bdc1cf;
+	color: #d1d7e2;
 }
