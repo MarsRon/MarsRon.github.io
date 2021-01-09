@@ -14,13 +14,13 @@
 <body>
 	<div id="navbar">
 		<ul>
-			<li title="Home"><a href=".">Home</a></li>
-			<li title="Contact" class="active"><a href="#">Contact</a></li>
-			<li title="Portfolio"><a href="portfolio/">Portfolio</a></li>
+			<li title="Home"><a href="index.html">Home</a></li>
+			<li title="Contact" class="active preload"><a href="#">Contact</a></li>
+			<li title="Portfolio"><a href="portfolio/index.html">Portfolio</a></li>
 		</ul>
 	</div>
 	<div id="title">
-		<h1 title="Contact me lol">Contact</h1>
+		<h1 title="Contact me lol" class="preload">Contact</h1>
 		<ul id="contact">
 			<p title="Add me on Discord!">Discord: MarsRon#7602</p>
 			<a title="Discord Server Invite Link" href="http://discord.gg/TSqw3jx" target="_blank" rel="noopener noreferrer">Discord Server</a>
@@ -29,7 +29,8 @@
 		</ul>
 	</div>
 	<div id="footer">
-		<small title="Please do not copy my website.">&copy; MarsRon 2020 - 2021</small>
+		<small title="Please do not copy my website.">&copy; MarsRon 2021</small>
 	</div>
+	<script>$(window).load(function(){$("body").removeClass("preload")})</script>
 </body>
 </html>

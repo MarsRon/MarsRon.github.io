@@ -4,6 +4,10 @@
 	font-family: Muli;
 }
 
+.preload * {
+	transition: none !important;
+}
+
 body {
 	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(background.jpg);
 	background-color: #383c55;
@@ -34,6 +38,7 @@ body {
 	color: #E9F1FE;
 	padding: 5px 20px;
 	border: 1px solid transparent;
+	transition: background-color 0.4s, border 0.25s;
 }
 
 #navbar ul li.active a {
@@ -41,13 +46,11 @@ body {
 }
 
 #navbar ul li a:hover {
-	background-color: rgba(233,241,254, 0.4);
-	transition: 0.5s;
+	background-color: rgba(233,241,254, 0.3);
 }
 
 #navbar ul li a:active {
 	border-bottom: 3px solid #fff;
-	transition: 0.5s;
 }
 
 #title {
@@ -61,6 +64,11 @@ body {
 #title h1 {
 	color: #f5f9ff;
 	font-size: 70px;
+	transition: font-size 0.2s;
+}
+
+#title h1:hover {
+	font-size: 80px;
 }
 
 #title p {
@@ -70,18 +78,20 @@ body {
 	margin: 5px;
 }
 
+#contact {
+	color: #d1d7e2;
+}
+
 #contact p {
-	text-align: center;
+	color: inherit;
 	font-size: larger;
 	margin: 5px;
 }
 
 #contact a {
-	text-align: center;
+	color: inherit;
 	font-size: larger;
 	margin: 5px;
-	text-decoration: none;
-	color: #d1d7e2;
 }
 
 #footer {
