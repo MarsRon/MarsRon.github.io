@@ -12,7 +12,7 @@ body {
 	background-position: center;
 }
 
-div.navbar {
+#navbar {
 	margin: auto;
 	width: 100%;
 	padding: 0.8rem;
@@ -20,71 +20,76 @@ div.navbar {
 	background-color: #212121;
 }
 
-ul.nav {
+#navbar ul {
 	float: left;
 	list-style-type: none;
 }
 
-ul.nav li {
+#navbar ul li {
 	display: inline-block;
 }
 
-ul.nav li a {
+#navbar ul li a {
 	text-decoration: none;
 	color: #E9F1FE;
 	padding: 5px 20px;
 	border: 1px solid transparent;
 }
 
-ul.nav li.active a {
+#navbar ul li.active-button a {
 	border-bottom: 3px solid #fff;
 }
 
-ul.nav li a:hover {
-	background-color: rgba(233,241,254, 0.45);
+#navbar ul li a:hover {
+	background-color: rgba(233,241,254, 0.4);
 	transition: 0.5s;
 }
 
-ul.nav li a:active {
+#navbar ul li a:active {
 	border-bottom: 3px solid #fff;
 	transition: 0.5s;
 }
 
-h1.logo {
-	display: inline-block;
-	margin-top: 10px;
-	margin-left: 10px;
-	padding: 5px;
-	color: #E9F1FE;
-	border: 2px solid #E9F1FE;
-}
-
-div.title {
+#title {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
-div.title h1 {
+#title h1 {
 	color: #f5f9ff;
 	font-size: 70px;
 }
 
-div.title p {
+#title p {
 	color: #d1d7e2;
 	text-align: center;
 	font-size: larger;
 	margin: 5px;
 }
 
-ul.contact p {
+#contact p {
 	text-align: center;
 	font-size: larger;
 	margin: 5px;
 }
 
-ul.contact p a {
+#contact a {
+	text-align: center;
+	font-size: larger;
+	margin: 5px;
 	text-decoration: none;
 	color: #d1d7e2;
+}
+
+#footer {
+	position: fixed;
+	left:0px;
+	bottom:0px;
+	height:30px;
+	width:100%;
+	text-align: center;
+	color: #808286;
 }
