@@ -3,13 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Embeds -->
 	<meta property="og:title" content="MarsRon - Home"/>
 	<meta property="og:description" content="MarsRon's personal website."/>
 	<meta name="title" content="MarsRon - Home"/>
 	<meta name="description" content="MarsRon's personal website."/>
 	<title>MarsRon - Home</title>
+
+	<!-- CSS, favicon and JS -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" href="logo.png" type="image/png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 	<div id="navbar">
@@ -20,12 +25,13 @@
 		</ul>
 	</div>
 	<div id="title">
-		<h1 title="It's my name what do you expect?" class="preload">MarsRon</h1>
+		<h1 title="It's my name what do you expect" class="preload">MarsRon</h1>
 		<p title="I'm a Luau programmer">Roblox coder in training.</p>
 	</div>
 	<div id="footer">
 		<small title="Please do not copy my website.">&copy; MarsRon 2021</small>
 	</div>
-	<script>$(window).load(function(){$("body").removeClass("preload")})</script>
+	<!-- Preload CCS Transitions -->
+	<script>$(document).ready($(".preload").removeClass("preload"));</script>
 </body>
 </html>
