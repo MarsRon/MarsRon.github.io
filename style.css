@@ -64,17 +64,18 @@ body {
 #title h1 {
 	color: #f5f9ff;
 	font-size: 70px;
-	transition: font-size 0.2s;
+	transition: font-size 0.5s;
 }
 
 #title h1:hover {
 	font-size: 80px;
+	transition: font-size 0.2s;
 }
 
 #title p {
 	color: #d1d7e2;
 	text-align: center;
-	font-size: larger;
+	font-size: larger;	
 	margin: 5px;
 }
 
