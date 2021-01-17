@@ -9,7 +9,7 @@
 }
 
 body {
-	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(background.webp);
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/background.webp);
 	background-color: #383c55;
 	height: 100vh;
 	background-size: cover;
