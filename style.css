@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-	background: #383c55 url("../img/background.webp") center no-repeat;
+	background: #383c55 url("./img/background.webp") center no-repeat;
 	background-size: cover;
 }
 
