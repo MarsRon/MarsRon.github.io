@@ -8,12 +8,13 @@
 	transition: none !important;
 }
 
+html, body {
+	height: 100%;
+}
+
 body {
-	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/background.webp);
-	background-color: #383c55;
-	height: 100vh;
+	background: #383c55 url("../img/background.webp") center no-repeat;
 	background-size: cover;
-	background-position: center;
 }
 
 #navbar {
