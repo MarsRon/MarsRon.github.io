@@ -1,5 +1,6 @@
 function preload() {
-	for (var e = document.getElementsByClassName("preload"), i = 0; i < e.length; i++)
+	var e = document.getElementsByClassName("preload");
+	for (var i = 0; i < e.length; i++)
 		e[i].classList.remove("preload");
 }
 preload();
