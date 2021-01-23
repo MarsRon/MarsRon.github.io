@@ -97,6 +97,10 @@ body {
 	margin: 5px;
 }
 
+#contact a:hover {
+	text-decoration: none;
+}
+
 #footer {
 	position: fixed;
 	left: 0px;
