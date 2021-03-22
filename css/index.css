@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Muli, sans-serif;
+}
+
+.preload {
+	transition: none !important;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #383c55 url("../images/background.webp") center no-repeat;
+	background-size: cover;
+}
+
+#navbar {
+	margin: auto;
+	width: 100%;
+	padding: 0.8rem;
+	position: fixed;
+	background-color: #212121;
+}
+
+#navbar ul {
+	float: left;
+	list-style-type: none;
+}
+
+#navbar ul li {
+	display: inline-block;
+}
+
+#navbar ul li a {
+	text-decoration: none;
+	color: #E9F1FE;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: background-color 0.4s, border 0.25s;
+}
+
+#navbar ul li.active a {
+	border-bottom: 3px solid #fff;
+}
+
+#navbar ul li a:hover {
+	background-color: rgba(233,241,254, 0.3);
+}
+
+#navbar ul li a:active {
+	border-bottom: 3px solid #fff;
+	background-color: rgba(233,241,254, 0.3);
+}
+
+#title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#title h1 {
+	color: #f5f9ff;
+	font-size: 70px;
+	transition: font-size 0.5s;
+}
+
+#title h1:hover {
+	font-size: 80px;
+	transition: font-size 0.2s;
+}
+
+#title p {
+	color: #d1d7e2;
+	text-align: center;
+	font-size: larger;	
+	margin: 5px;
+}
+
+#contact {
+	color: #d1d7e2;
+}
+
+#contact p {
+	color: inherit;
+	font-size: larger;
+	margin: 5px;
+}
+
+#contact a {
+	color: inherit;
+	font-size: larger;
+	margin: 5px;
+}
+
+#contact a:hover {
+	text-decoration: none;
+}
+
+#footer {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	color: #808286;
+}
