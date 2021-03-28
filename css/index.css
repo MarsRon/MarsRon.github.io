@@ -1,7 +1,9 @@
 :root {
 	--white: #f0f0f0;
-	--blue: #235dff;
-	--blue2: #2618ec;
+	--blue: #2356ff;
+	--blue-light: #3e6ef3;
+	--blue-dark: #1d4ff3;
+	--indigo: #7416f0;
 	--gray: #212b30
 }
 
@@ -84,7 +86,7 @@ img {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: var(--blue);
+	background-color: var(--blue);
 	box-shadow: 0 2px 0 rgba(0, 0, 0, .4);
 	z-index: 10
 }
@@ -109,10 +111,28 @@ img {
 	font-size: 2rem;
 	padding: 1.2rem;
 	transition: background-color .25s ease-out;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer
+}
+
+span.ripple {
+	position: absolute;
+	border-radius: 50%;
+	transform: scale(0);
+	animation: ripple 600ms linear;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes ripple {
+	to {
+		transform: scale(4);
+		opacity: 0
+	}
 }
 
 .nav-list a:hover {
-	background-color: #1a52ec;
+	background-color: var(--blue-dark)
 }
 
 .welcome-section {
@@ -130,13 +150,13 @@ img {
 	font-size: 3rem;
 	font-weight: 200;
 	font-style: italic;
-	color: #4375ff
+	color: var(--blue-light)
 }
 
 .projects-section {
 	text-align: center;
 	padding: 10rem 2rem;
-	background: linear-gradient(-39deg, var(--blue2) 0, #6f00ff 66%)
+	background-image: linear-gradient(-34deg, #5621e9 0, var(--indigo) 100%)
 }
 
 .projects-section-header {
@@ -172,7 +192,7 @@ img {
 }
 
 .project {
-	background: var(--gray);
+	background-color: var(--gray);
 	box-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
 	border-radius: 2px
 }
@@ -183,7 +203,7 @@ img {
 }
 
 .project:hover .code {
-	color: coral
+	color: #35df6e
 }
 
 .project-image {
@@ -206,11 +226,12 @@ img {
 .btn-show-all {
 	font-size: 2rem;
 	background-color: var(--gray);
+	box-shadow: 3px 3px rgba(0, 0, 0, .25);
 	transition: background-color .3s ease-out
 }
 
 .btn-show-all:hover {
-	background: var(--blue)
+	background-color: var(--blue)
 }
 
 .contact-section {
@@ -222,7 +243,7 @@ img {
 	width: 100%;
 	height: 80vh;
 	padding: 0 2rem;
-	background: var(--gray)
+	background-color: var(--gray)
 }
 
 .contact-section-header>h2 {
@@ -265,7 +286,7 @@ footer {
 	display: flex;
 	justify-content: space-evenly;
 	padding: 2rem;
-	background: var(--gray);
+	background-color: var(--gray);
 	border-top: 4px solid var(--blue)
 }
 

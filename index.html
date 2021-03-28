@@ -20,10 +20,9 @@
 
 	<link rel="shortcut icon" href="/favicon.ico" />
 	<link rel="stylesheet" href="/css/index.css" />
-	<link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" /></noscript>
 	<link rel="preload" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous" />
 	<noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" /></noscript>
+	<script src="/js/index.js"></script>
 </head>
 
 <body>
@@ -59,14 +58,15 @@
 			<a
 				href="https://www.npmjs.com/package/owofire"
 				class="project project-tile"
+				target="_blank" rel="noopener noreferrer"
 			>
 				<img
 					class="project-image"
-					src="/images/npm-package.png"
+					src="/images/owofire.png"
 					alt="OwOfire"
 				/>
 				<p class="project-title">
-					<span class="code">&lt; </span>OwOfire<span class="code"> &#47;&gt;</span>
+					<span class="code">&lt; </span>OwOfire NPM package<span class="code"> &#47;&gt;</span>
 				</p>
 			</a>
 
@@ -84,7 +84,7 @@
 				</p>
 			</a>
 		</div>
-		<a href="https://github.com/MarsRon?tab=repositories" class="btn btn-show-all" target="_blank" rel="noopener noreferrer">
+		<a id="show-all" href="https://github.com/MarsRon?tab=repositories" class="btn btn-show-all" target="_blank" rel="noopener noreferrer">
 			Show all
 			<i class="fas fa-chevron-right"></i>
 		</a>
@@ -100,6 +100,9 @@
 			</a>
 			<a href="https://github.com/MarsRon" target="_blank" rel="noopener noreferrer" class="btn contact-details">
 				<i class="fab fa-github"></i> GitHub
+			</a>
+			<a href="mailto:marsronbusiness@gmail.com" class="btn contact-details">
+				<i class="fas fa-at"></i> Email
 			</a>
 		</div>
 	</section>
