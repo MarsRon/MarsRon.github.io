@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@700&display=swap");
+
 :root {
 	--white: #f0f0f0;
 	--blue: #2356ff;
@@ -12,9 +14,7 @@
 	padding: 0
 }
 
-*,
-::after,
-::before {
+*, ::after, ::before {
 	box-sizing: inherit
 }
 
@@ -50,8 +50,7 @@ body {
 	color: var(--white)
 }
 
-h1,
-h2 {
+h1, h2 {
 	font-family: Raleway, sans-serif;
 	font-weight: 700;
 	text-align: center
@@ -193,8 +192,13 @@ span.ripple {
 
 .project {
 	background-color: var(--gray);
-	box-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
-	border-radius: 2px
+	box-shadow: 2px 2px rgba(0, 0, 0, .3);
+	border-radius: 2px;
+	transition: box-shadow .3s ease-out
+}
+
+.project:hover {
+	box-shadow: 4px 4px rgba(0, 0, 0, .3);
 }
 
 .code {
@@ -214,7 +218,7 @@ span.ripple {
 
 .project-title {
 	font-size: 2rem;
-	padding: 2rem .5rem
+	padding: 2rem .5rem;
 }
 
 .btn {
@@ -227,11 +231,12 @@ span.ripple {
 	font-size: 2rem;
 	background-color: var(--gray);
 	box-shadow: 3px 3px rgba(0, 0, 0, .25);
-	transition: background-color .3s ease-out
+	transition: background-color .3s ease-out, box-shadow .3s ease-out
 }
 
 .btn-show-all:hover {
-	background-color: var(--blue)
+	background-color: hsl(200, 19%, 22%);
+	box-shadow: 5px 5px rgba(0, 0, 0, .25)
 }
 
 .contact-section {
