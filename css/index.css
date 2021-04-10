@@ -6,7 +6,8 @@
 	--blue-light: #3e6ef3;
 	--blue-dark: #1d4ff3;
 	--indigo: #7416f0;
-	--gray: #212b30
+	--gray: #212b30;
+	--gray-light: #2d3c43
 }
 
 * {
@@ -194,11 +195,12 @@ span.ripple {
 	background-color: var(--gray);
 	box-shadow: 2px 2px rgba(0, 0, 0, .3);
 	border-radius: 2px;
-	transition: box-shadow .3s ease-out
+	transition: box-shadow .3s ease-out, background-color .3s ease-out
 }
 
 .project:hover {
-	box-shadow: 4px 4px rgba(0, 0, 0, .3);
+	background-color: hsl(200, 19%, 18%);
+	box-shadow: 4px 4px rgba(0, 0, 0, .3)
 }
 
 .code {
@@ -235,7 +237,7 @@ span.ripple {
 }
 
 .btn-show-all:hover {
-	background-color: hsl(200, 19%, 22%);
+	background-color: #2d3c43;
 	box-shadow: 5px 5px rgba(0, 0, 0, .25)
 }
 
