@@ -16,8 +16,18 @@ function createRipple(event) {
 
 	button.appendChild(circle);
 }
+
 document.addEventListener("DOMContentLoaded", function() {
-	for (const button of document.getElementsByTagName("a")) {
+	for (const button of document.getElementsByTagName("a"))
 		button.onclick = createRipple;
-	}
+
+	// Rotate background gradient
+	const background = document.getElementById("about");
+	let deg = 62;
+	setInterval(function() {
+		deg += 4;
+		if (deg >= 360)
+			deg = 0;
+		background.style.backgroundImage = `linear-gradient(${deg}deg, #3a3d40 0, #181719 100%)`;
+	}, 100);
 });

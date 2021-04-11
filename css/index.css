@@ -147,9 +147,8 @@ span.ripple {
 }
 
 .welcome-section>p {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-weight: 200;
-	font-style: italic;
 	color: var(--blue-light)
 }
 
@@ -265,7 +264,7 @@ span.ripple {
 
 .contact-section-header>p {
 	font-size: 2.1rem;
-	font-style: italic
+	color: hsl(0, 0%, 88%)
 }
 
 .contact-links {
