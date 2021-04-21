@@ -3,7 +3,7 @@
 
 const gravity = 0.35,
 	length = 200,
-	origin = { x: 300, y: 5 };
+	origin = { x: 175, y: 5 };
 
 let angle = Math.PI / 5,
 	angleV = 0,
@@ -11,7 +11,7 @@ let angle = Math.PI / 5,
 	bob = { x: 0, y: 0 };
 
 function setup() {
-	createCanvas(600, 300);
+	createCanvas(350, 300);
 }
 
 function draw() {
