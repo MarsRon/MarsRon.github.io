@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100vw
+}
+
+body {
+	color: #fff;
+	text-align: center;
+	background-color: #000
+}
+
+#title {
+	position: fixed
+}
+
+h1 {
+	font-size: 3rem;
+	margin-top: 1rem
+}
+
+main {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
