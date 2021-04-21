@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@700&display=swap");
-
 :root {
 	--white: #f0f0f0;
 	--blue: #2356ff;
@@ -149,7 +147,8 @@ span.ripple {
 .welcome-section>p {
 	font-size: 2.5rem;
 	font-weight: 200;
-	color: var(--blue-light)
+	color: var(--blue-light);
+	text-align: center
 }
 
 .projects-section {
@@ -219,7 +218,7 @@ span.ripple {
 
 .project-title {
 	font-size: 2rem;
-	padding: 2rem .5rem;
+	padding: 2rem .5rem
 }
 
 .btn {
@@ -253,7 +252,8 @@ span.ripple {
 }
 
 .contact-section-header>h2 {
-	font-size: 6rem
+	font-size: 6rem;
+	margin-bottom: 1.2rem
 }
 
 @media (max-width:28.75em) {
