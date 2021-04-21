@@ -1,11 +1,11 @@
 // Modified from Coding Train
 // https://thecodingtrain.com/CodingChallenges/159-simple-pendulum-simulation.html
 
-const gravity = 1,
+const gravity = 0.35,
 	length = 200,
 	origin = { x: 300, y: 5 };
 
-let angle = Math.PI / 4,
+let angle = Math.PI / 5,
 	angleV = 0,
 	angleA = 0,
 	bob = { x: 0, y: 0 };

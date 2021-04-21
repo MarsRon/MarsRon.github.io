@@ -12,7 +12,10 @@ body {
 }
 
 #title {
-	position: fixed
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center
 }
 
 h1 {
