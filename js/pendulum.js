@@ -7,16 +7,15 @@ const gravity = 0.35,
 
 let angle = Math.PI / -5,
 	angleV = 0,
-	angleA = 0,
 	bob = { x: 0, y: 0 };
 
 function setup() {
 	createCanvas(350, 300).parent("canvas");
+	document.getElementsByTagName("main")[0].remove();
 }
 
 function draw() {
-	angleA = -gravity * sin(angle) / length;
-	angleV += angleA;
+	angleV += -gravity * sin(angle) / length;
 	angle += angleV;
 
 	// angleV *= 0.99;
