@@ -24,8 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
 	let deg = 62;
 	const rotate = () => {
 		deg += 0.5;
+		if (deg >= 360)
+			deg = 0;
 		style.backgroundImage = `linear-gradient(${deg}deg, #3a3d40 0, #181719 100%)`;
 		animate(rotate);
-	}
+	};
 	animate(rotate);
 });
