@@ -9,7 +9,7 @@ function createRipple({ currentTarget: button, clientX, clientY }) {
 	style.top = `${clientY - button.offsetTop - radius}px`;
 	ripple.classList.add("ripple");
 
-	setTimeout(() => ripple.remove(), 1000);
+	setTimeout(() => ripple.remove(), 600);
 
 	button.appendChild(ripple);
 }

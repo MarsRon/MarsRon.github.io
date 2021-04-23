@@ -10,35 +10,23 @@
 
 * {
 	margin: 0;
-	padding: 0
-}
-
-*, ::after, ::before {
-	box-sizing: inherit
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center
 }
 
 html {
-	box-sizing: border-box;
 	font-size: 62.5%;
 	scroll-behavior: smooth
 }
-
 @media (max-width:75em) {
-	html {
-		font-size: 60%
-	}
+	html {font-size: 60%}
 }
-
 @media (max-width:61.25em) {
-	html {
-		font-size: 58%
-	}
+	html {font-size: 58%}
 }
-
 @media (max-width:28.75em) {
-	html {
-		font-size: 55%
-	}
+	html {font-size: 55%}
 }
 
 body {
@@ -50,9 +38,7 @@ body {
 }
 
 h1, h2 {
-	font-family: Raleway, sans-serif;
-	font-weight: 700;
-	text-align: center
+	font-family: Raleway, sans-serif
 }
 
 h1 {
@@ -82,10 +68,10 @@ img {
 	justify-content: flex-end;
 	position: fixed;
 	top: 0;
-	left: 0;
+	right: 0;
 	width: 100%;
 	background-color: var(--blue);
-	box-shadow: 0 2px 0 rgba(0, 0, 0, .4);
+	box-shadow: 0 2px 0 rgba(0,0,0,.4);
 	z-index: 10
 }
 
@@ -113,13 +99,16 @@ img {
 	overflow: hidden;
 	cursor: pointer
 }
+.nav-list a:hover {
+	background-color: var(--blue-dark)
+}
 
 span.ripple {
 	position: absolute;
 	border-radius: 50%;
 	transform: scale(0);
-	animation: ripple 600ms linear;
-	background-color: rgba(255, 255, 255, 0.3);
+	animation: ripple .6s linear;
+	background-color: rgba(255,255,255,.25)
 }
 
 @keyframes ripple {
@@ -129,30 +118,24 @@ span.ripple {
 	}
 }
 
-.nav-list a:hover {
-	background-color: var(--blue-dark)
-}
-
-.welcome-section {
+.about-section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 	height: 100vh;
-	background-color: #000;
+	background-color: #292a2c;
 	background-image: linear-gradient(62deg, #3a3d40 0, #181719 100%)
 }
 
-.welcome-section>p {
+.about-section>p {
 	font-size: 2.5rem;
-	font-weight: 200;
-	color: var(--blue-light);
-	text-align: center
+	font-weight: 300;
+	color: var(--blue-light)
 }
 
 .projects-section {
-	text-align: center;
 	padding: 10rem 2rem;
 	background-image: linear-gradient(-34deg, #5621e9 0, var(--indigo) 100%)
 }
@@ -162,7 +145,6 @@ span.ripple {
 	margin: 0 auto 6rem auto;
 	border-bottom: .2rem solid var(--white)
 }
-
 @media (max-width:28.75em) {
 	.projects-section-header {
 		font-size: 4rem
@@ -191,14 +173,13 @@ span.ripple {
 
 .project {
 	background-color: var(--gray);
-	box-shadow: 2px 2px rgba(0, 0, 0, .3);
+	box-shadow: 2px 2px rgba(0,0,0,.3);
 	border-radius: 2px;
 	transition: box-shadow .3s ease-out, background-color .3s ease-out
 }
-
 .project:hover {
-	background-color: hsl(200, 19%, 18%);
-	box-shadow: 4px 4px rgba(0, 0, 0, .3)
+	background-color: #253137;
+	box-shadow: 4px 4px rgba(0,0,0,.3)
 }
 
 .code {
@@ -230,13 +211,12 @@ span.ripple {
 .btn-show-all {
 	font-size: 2rem;
 	background-color: var(--gray);
-	box-shadow: 3px 3px rgba(0, 0, 0, .25);
+	box-shadow: 3px 3px rgba(0,0,0,.25);
 	transition: background-color .3s ease-out, box-shadow .3s ease-out
 }
-
 .btn-show-all:hover {
-	background-color: #2d3c43;
-	box-shadow: 5px 5px rgba(0, 0, 0, .25)
+	background-color: var(--gray-light);
+	box-shadow: 5px 5px rgba(0,0,0,.25)
 }
 
 .contact-section {
@@ -244,7 +224,6 @@ span.ripple {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
 	width: 100%;
 	height: 80vh;
 	padding: 0 2rem;
@@ -255,7 +234,6 @@ span.ripple {
 	font-size: 6rem;
 	margin-bottom: 1.2rem
 }
-
 @media (max-width:28.75em) {
 	.contact-section-header>h2 {
 		font-size: 4rem
@@ -264,7 +242,8 @@ span.ripple {
 
 .contact-section-header>p {
 	font-size: 2.1rem;
-	color: hsl(0, 0%, 88%)
+	font-weight: 300;
+	color: #e0e0e0
 }
 
 .contact-links {
@@ -296,9 +275,19 @@ footer {
 	border-top: 4px solid var(--blue)
 }
 
-@media (max-width:28.75em) {
-	footer {
-		flex-direction: column;
-		text-align: center
-	}
+::-webkit-scrollbar {
+	width: 9px;
+	height: 9px
+}
+::-webkit-scrollbar-track {
+	background: #f1f1f1
+}
+::-webkit-scrollbar-corner {
+	background: #f1f1f1
+}
+::-webkit-scrollbar-thumb {
+	background: #999
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #888
 }

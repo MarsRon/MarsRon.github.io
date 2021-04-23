@@ -25,15 +25,16 @@
 	<link rel="shortcut icon" href="./favicon.ico" />
 	<script defer src="./js/index.js"></script>
 	<link rel="stylesheet" href="./css/index.css" />
-	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous" />
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Raleway:wght@700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous" />
 	<link rel="preload" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous" />
 	<noscript>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Raleway:wght@700&display=swap">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
 	</noscript>
 </head>
 
 <body>
+	<span class="ripple"></span>
 	<nav id="navbar" class="nav">
 		<ul class="nav-list">
 			<li><a href="#about">About</a></li>
@@ -41,7 +42,7 @@
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</nav>
-	<section id="about" class="welcome-section">
+	<section id="about" class="about-section">
 		<h1>Hey I'm MarsRon</h1>
 		<p>A small and noob developer.</p>
 	</section>
@@ -62,7 +63,7 @@
 			<a href="https://marsron.github.io/repl-pinger/" class="project project-tile">
 				<img
 					class="project-image"
-					src="https://repl.it/public/images/sm.png"
+					src="./images/replit.svg"
 					alt="Repl Pinger"
 				/>
 				<p class="project-title">
@@ -73,7 +74,7 @@
 			<a href="https://www.npmjs.com/package/owofire" class="project project-tile">
 				<img
 					class="project-image"
-					src="./images/owofire.png"
+					src="./images/owofire.jpg"
 					alt="OwOfire NPM Package"
 				/>
 				<p class="project-title">
@@ -114,7 +115,7 @@
 				</p>
 			</a>
 		</div>
-		<a id="show-all" href="https://github.com/MarsRon?tab=repositories" class="btn btn-show-all">
+		<a id="show-all" href="#projects" class="btn btn-show-all">
 			Show all
 			<i class="fas fa-chevron-right"></i>
 		</a>
