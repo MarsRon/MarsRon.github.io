@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth
+}
+
+@media (max-width:75em) {
+	html {
+		font-size: 60%
+	}
+}
+
+@media (max-width:61.25em) {
+	html {
+		font-size: 58%
+	}
+}
+
+@media (max-width:28.75em) {
+	html {
+		font-size: 55%
+	}
+}
+
+body {
+	font-family: Roboto, sans-serif;
+	font-size: 1.8rem;
+	font-weight: 300;
+	line-height: 1.4;
+	color: #f0f0f0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background-color: #292a2c;
+	background-image: linear-gradient(62deg, #3a3d40 0, #181719 100%)
+}
+
+h1 {
+	font-size: 6rem
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+	font-weight: 400;
+	font-size: 2rem;
+	letter-spacing: .1rem;
+	padding: 1.2rem 1.7rem;
+	margin-top: 2rem;
+	background-color: #003cff;
+	box-shadow: 3px 3px rgba(0,0,0,.25);
+	transition: background-color .25s ease-out, box-shadow .25s ease-out;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer
+}
+
+a:hover {
+	background-color: #2356ff;
+	box-shadow: 5px 5px rgba(0,0,0,.25)
+}
+
+span.ripple {
+	position: absolute;
+	border-radius: 50%;
+	transform: scale(0);
+	animation: ripple .6s linear;
+	background-color: rgba(255,255,255,.3)
+}
+
+@keyframes ripple {
+	to {
+		transform: scale(4);
+		opacity: 0
+	}
+}
+
+p {
+	font-size: 2.5rem;
+	color: #3e6ef3;
+	margin: 1rem 0 1rem
+}
+
+footer {
+	position: fixed;
+	bottom: 1.5rem;
+	color: #ccc
+}
+
+::-webkit-scrollbar {
+	width: 9px;
+	height: 9px
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1
+}
+
+::-webkit-scrollbar-corner {
+	background: #f1f1f1
+}
+
+::-webkit-scrollbar-thumb {
+	background: #999
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #888
+}
