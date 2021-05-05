@@ -1,7 +1,7 @@
 // Modified from Coding Train
-// https://thecodingtrain.com/CodingChallenges/159-simple-pendulum-simulation.html
+// https://thecodingtrain.com/CodingChallenges/159-simple-pendulum-simulation
 
-const gravity = 0.35,
+const gravity = -0.35,
 	length = 200,
 	origin = { x: 175, y: 5 };
 
@@ -15,7 +15,7 @@ function setup() {
 }
 
 function draw() {
-	angleV += -gravity * sin(angle) / length;
+	angleV += gravity * sin(angle) / length;
 	angle += angleV;
 
 	// angleV *= 0.99;
