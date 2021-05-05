@@ -2,12 +2,11 @@
 
 Looks like you found my GitHub page!
 
-
+---
 
 I'm MarsRon, a small and noob developer.\
-I (try to) make Discord bots and websites but I suck so yeah <img alt=":cri:" title=":cri:" width="20px" src="https://cdn.discordapp.com/emojis/745563112106754129.png" />. \
-I also have tons of random, useless and unfinished projects (for example [`pendulum lol`](https://marsron.github.io/pendulum) lmao).\
-I am spid at typing !!111 (jk lol i suck)
+I (try to) make Discord bots and websites but I suck so yeah <img alt=":cri:" title=":cri:" width="20px" src="https://cdn.discordapp.com/emojis/745563112106754129.png" style="vertical-align: text-bottom" />.\
+I also have tons of random, useless and dumb one-off projects such as [Pendulum lol](https://marsron.github.io/pendulum) & [Ripple button](https://marsron.github.io/ripple-button)
 
 
 
