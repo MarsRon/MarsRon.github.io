@@ -6,7 +6,7 @@ Looks like you found my GitHub page!
 
 I'm MarsRon, a small and noob developer.\
 I (try to) make Discord bots and websites but I suck so yeah <img alt=":cri:" title=":cri:" width="20px" src="https://cdn.discordapp.com/emojis/745563112106754129.png" style="vertical-align: text-bottom" />.\
-I also have tons of random, useless and dumb one-off projects such as [Pendulum lol](https://marsron.github.io/pendulum) & [Ripple button](https://marsron.github.io/ripple-button)
+I also have tons of random, useless and dumb one-off projects such as [`pendulum-lol`](https://marsron.github.io/pendulum) and [`ripple-button`](https://marsron.github.io/ripple-button).
 
 
 
@@ -53,7 +53,7 @@ I also have tons of random, useless and dumb one-off projects such as [Pendulum 
 Check out [`phobos`](https://marsron.github.io/phobos/), a small Discord.js bot I'm currently developing.
 
 Other projects of mine includes:
- - [`repl-pinger`](https://marsron.github.io/repl-pinger/), a Node.js application that relays UptimeRobot pings to repls on Replit.
+ - [`repl-pinger`](https://github.com/MarsRon/repl-pinger#readme), a Node.js application that relays UptimeRobot pings to repls on Replit.
  - [`owofire`](https://www.npmjs.com/package/owofire), a simple NPM package to owoify text.
 
 If you're interested, head over to my [repositories tab](https://github.com/MarsRon?tab=repositories) to view all of my projects!
